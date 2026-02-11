@@ -2,12 +2,15 @@
 
 /*----------------------Hero-------------------------*/
 .hero{
+    text-align: center;
     background-color:  var(--second-text-color);
 }
 
 .hero-title{
-    color: var(--white-text-color);
+    margin-top: 0;
+    margin-bottom: 30px;
 
+    color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -17,6 +20,11 @@
 }
 
 .hero-btn{
+    display: inline-block;
+    min-width: 216px;
+    height: 50px;
+    padding: 10px 32px;
+
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
 
@@ -24,23 +32,29 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    border-radius: 4px;
 
     text-align: center;
 }
 
 /*----------------------Advantages-------------------------*/
 .advantages-item-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--primary-text-color);
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.03em;
-
     text-transform: uppercase;
 }
 
 .advantages-item-text{
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--second-text-color);
 
     font-weight: 400;

@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -17,20 +19,22 @@
   <body>
     <!--Шапка страницы-->
     <header class="header">
-      <a href="./index.html" class="header-logo link"><span class="accent">Web</span>Studio</a>
-      <nav class="header-nav">
-        <ul class="list">
-          <li><a href="./index.html" class="header-nav-link link">Студія</a></li>
-          <li><a href="./portfolio.html" class="header-nav-link link">Портфоліо</a></li>
-          <li><a href="" class="header-nav-link link">Контакти</a></li>
-        </ul>
-      </nav>
-      <address class="header-address">
-        <a href="" class="header-address-link link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="header-address-link link"
-          >+38 096 111 11 11</a
-        >
-      </address>
+      <div class="container">
+        <a href="./index.html" class="header-logo link"><span class="accent">Web</span>Studio</a>
+        <nav class="header-nav">
+          <ul class="list">
+            <li><a href="./index.html" class="header-nav-link current link">Студія</a></li>
+            <li><a href="./portfolio.html" class="header-nav-link link">Портфоліо</a></li>
+            <li><a href="" class="header-nav-link link">Контакти</a></li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <a href="" class="header-address-link link">info@devstudio.com</a>
+          <a href="tel:+380961111111" class="header-address-link link"
+            >+38 096 111 11 11</a
+          >
+        </address>
+      </div>
     </header>
     <main>
       <!--Первая секция, герой-->
@@ -40,60 +44,62 @@
       </section>
       <!-- Вторая секция, особенности -->
       <section class="advantages">
-        <h2 class="visually-hidden">Особливості</h2>
-        <ul class="advantages-list list">
-          <li class="advantages-item">
-            <img
-              src="./images/antenna(1).svg"
-              alt="антена"
-              width="270"
-              height="120"
-            />
-            <h3 class="advantages-item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="advantages-item-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <img
-              src="./images/clock(1).svg"
-              alt="годинник"
-              width="270"
-              height="120"
-            />
-            <h3 class="advantages-item-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="advantages-item-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <img
-              src="./images/vector(1).svg"
-              alt="вектор"
-              width="270"
-              height="120"
-            />
-            <h3 class="advantages-item-title">ПЛАНУВАННЯ</h3>
-            <p class="advantages-item-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <img
-              src="./images/astronaut(1).svg"
-              alt="космонавт"
-              width="270"
-              height="120"
-            />
-            <h3 class="advantages-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="advantages-item-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Особливості</h2>
+          <ul class="advantages-list list">
+            <li class="advantages-item">
+              <img
+                src="./images/antenna(1).svg"
+                alt="антена"
+                width="270"
+                height="120"
+              />
+              <h3 class="advantages-item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="advantages-item-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <img
+                src="./images/clock(1).svg"
+                alt="годинник"
+                width="270"
+                height="120"
+              />
+              <h3 class="advantages-item-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="advantages-item-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне
+                у себе.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <img
+                src="./images/vector(1).svg"
+                alt="вектор"
+                width="270"
+                height="120"
+              />
+              <h3 class="advantages-item-title">ПЛАНУВАННЯ</h3>
+              <p class="advantages-item-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <img
+                src="./images/astronaut(1).svg"
+                alt="космонавт"
+                width="270"
+                height="120"
+              />
+              <h3 class="advantages-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="advantages-item-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових
+                завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Третья секция, чем мы занимаемся-->
       <section class="classes">
