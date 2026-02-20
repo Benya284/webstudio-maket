@@ -19,8 +19,19 @@ body {
 .container{
     margin: 0 auto;
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     outline: 2px solid tomato;
 
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-top{
+    padding-top: 94px;
 }
 
 .link {
@@ -56,6 +67,11 @@ body {
 }
 
 /*-------------------Header-----------------*/
+.header-flex{
+    display: flex;
+    align-items: center;
+}
+
 .header-logo {
     color: var(--black-text-color);
 
@@ -66,7 +82,21 @@ body {
     letter-spacing: 0.03em;
 }
 
+.header-nav-list{
+    display: flex;
+    margin-left: 93px;
+}
+
+
+.header-nav-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .header-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -75,12 +105,26 @@ body {
     letter-spacing: 0.02em;
 }
 
+
 .header-nav-link:hover,
 .header-nav-link:focus {
     color: var(--accent-text-color);
 }
 
+.header-address{
+    display: flex;
+    margin-left: auto;
+}
+
+.header-address-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .header-address-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--second-text-color);
 
     font-weight: 500;
@@ -96,10 +140,24 @@ body {
 
 /*----------------------Footer---------------------------------*/
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-color2);
 }
 
+.footer-flex{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-flex-left{
+    margin-right: 70px;
+}
+
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
     color: var(--white-text-color);
 
     font-family: 'Raleway', sans-serif;
@@ -110,24 +168,36 @@ body {
 }
 
 .footer-address-text {
+    margin-top: 0;
+    margin-bottom: 9px;
+
     color: var(--white-text-color);
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
 }
 
 .footer-address-link {
+    display: block;
+
     color: var(--transparent-text-color);
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
+}
+
+.footer-address-link:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .footer-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+
     color: var(--white-text-color);
 
     font-weight: 700;
@@ -137,3 +207,11 @@ body {
 
     text-transform: uppercase;
 }
+
+.footer-nav-list{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
