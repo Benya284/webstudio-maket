@@ -1,6 +1,47 @@
+.works{
+  padding: 94px 215px
+}
 
 
+.works-button-list{
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;  
+}
 
+.works-button-item:not(:last-child){
+  margin-right: 8px;
+}
+
+.works-button{
+  background-color: var(--background-color1);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.works-button.current{
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.works-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.works-item{
+  margin: 15px;
+}
 .works-article-title{
   color: var(--primary-text-color);
 
