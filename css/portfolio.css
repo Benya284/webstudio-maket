@@ -36,12 +36,23 @@
 .works-list{
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: -13px;
 }
 
 .works-item{
-  margin: 15px;
+  margin: 13px;
+  width: 370px;
+
 }
+
+.works-article{
+  border: 1px solid var(--background-article-color);  
+}
+
+.article-descrption{
+  padding: 20px 24px;
+}
+
 .works-article-title{
   color: var(--primary-text-color);
 
